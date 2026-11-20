@@ -60,6 +60,39 @@ Links:
 - [NCBI SRA Run](https://www.ncbi.nlm.nih.gov/sra/SRR5753432)
 - [NCBI BioSample](https://www.ncbi.nlm.nih.gov/biosample/SAMN03145444)
 
+### Galaxy Workflow Procedure
+
+1. Galaxy History created and named Sex_Dosage_Bos_taurus.
+
+2. Imported Bos taurus reference genome FASTA
+<img width="2160" height="1462" alt="image" src="https://github.com/user-attachments/assets/c79ac2fe-1d24-49f2-803b-ca26b7f3301a" />
+
+
+3. Imported WGS reads with SRR5753432
+<img width="2160" height="1460" alt="image" src="https://github.com/user-attachments/assets/bba00481-1f3d-4079-a0aa-351a9b2f8de4" />
+
+
+4. Performed FASTQC in order to examine the read quality
+<img width="2160" height="1462" alt="image" src="https://github.com/user-attachments/assets/be8e5783-e1c5-425f-ae64-47cb431b5ba1" />
+
+
+5. Used BWA-MEM to align the reads against the reference assembly.
+<img width="2160" height="1462" alt="image" src="https://github.com/user-attachments/assets/0b616bb8-91cf-42fd-981d-d433076f70f5" />
+- Mapped reads were coordinate-sorted;BAM index was generated to support chromosome coverage analysis.
+
+6. Used Samtools coverage to calculate chromosome coverage;Set minimum mapping quality to 20 and minimum base quality to 20.
+<img width="2160" height="1455" alt="image" src="https://github.com/user-attachments/assets/e3588a11-dae2-4c45-ac0b-1a12846d8110" />
+
+
+### Galaxy History
+
+- https://usegalaxy.org/histories/view?id=bbd44e69cb8906b5c9a94a13910546b2
+   
+
+
+
+
+
 
 
 
